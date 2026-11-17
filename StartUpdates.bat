@@ -1,6 +1,5 @@
 @echo off
-cd /d "%~dp0"
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0UpdateGames.ps1"
+start "" powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "%~dp0UpdateGames.ps1"
 
 exit
